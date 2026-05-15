@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OverSailed</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #111318;
+      color: #e8e8e8;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background: #1f2633;
+      padding: 18px 28px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      justify-content: flex-end;
+    }
+
+    .nav-right {
+      justify-content: flex-start;
+    }
+
+    nav a {
+      color: #e8e8e8;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 10px;
+    }
+
+    nav a:hover {
+      background: #30394a;
+    }
+
+    .hero-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .logo {
+        order: 1;
+      }
+
+      .nav-left {
+        order: 2;
+        justify-content: center;
+      }
+
+      .nav-right {
+        order: 3;
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-left">
+      <a href="Crew.html">Crew</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+
+    <div class="logo">OverSailed</div>
+
+    <nav class="nav-right">
+      <a href="about.html">About us</a>
+      <a href="support.html">Support us</a>
+    </nav>
+  </header>
+
+  <section class="hero-image">
+    <img src="plakat.jpg" alt="OverSailed poster">
+  </section>
+</body>
+</html>
