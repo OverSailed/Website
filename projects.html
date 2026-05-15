@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OverSailed</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111318;
+      color: #e8e8e8;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+       header {
+      background: #1f2633;
+      padding: 18px 28px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 28px;
+    }
+    
+    .logo {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+    
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    
+    .nav-left {
+      justify-content: flex-end;
+    }
+    
+    .nav-right {
+      justify-content: flex-start;
+    }
+    
+    nav a {
+      color: #e8e8e8;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 10px;
+    }
+    
+    nav a:hover {
+      background: #30394a;
+    }
+    
+    @media (max-width: 700px) {
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+    
+      .logo {
+        order: 1;
+      }
+    
+      .nav-left {
+        order: 2;
+      }
+    
+      .nav-right {
+        order: 3;
+      }
+    
+      nav {
+        justify-content: center;
+      }
+    }
+        
+    main {
+      max-width: 1400px;
+      margin: 48px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #cfd3dc;
+      margin-bottom: 36px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    
+    .gallery img {
+      width: min(30vw, 360px);
+      min-width: 220px;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav-left">
+      <a href="Crew.html">Crew</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  
+    <div class="logo">OverSailed</div>
+  
+    <nav class="nav-right">
+      <a href="about.html">About us</a>
+      <a href="support.html">Support us</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>
+      ~~~~ HELLO WORD! ~~~~<br>
+      projects <br>
+      projects <br>
+    </p>
+
+    <div class="gallery">
+  <img src="sail1.jpg" alt="Sail image 1">
+  <img src="sail2.jpg" alt="Sail image 2">
+  <img src="sail3.png" alt="Sail image 3">
+</div>
+
+    <p>
+       If you want to contact me, please use this link: discord.gg/4YZHHEGe
+    </p>
+    
+  </main>
+</body>
+</html>
