@@ -14,13 +14,39 @@
 
     header {
       background: #1f2633;
-      padding: 22px;
-      text-align: center;
+      padding: 18px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    
+    .logo {
       font-size: 36px;
       font-weight: 800;
       letter-spacing: 4px;
     }
+    
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    
+    nav a {
+      color: #e8e8e8;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 10px;
+    }
+    
+    nav a:hover {
+      background: #30394a;
+    }
 
+    
     main {
       max-width: 1400px;
       margin: 48px auto;
@@ -53,7 +79,16 @@
   </style>
 </head>
 <body>
-  <header>OverSailed</header>
+  <header>
+    <div class="logo">OverSailed</div>
+  
+    <nav>
+      <a href="Crew.html">Crew</a>
+      <a href="about.html">About us</a>
+      <a href="projects.html">Projects</a>
+      <a href="support.html">Support us</a>
+    </nav>
+  </header>
 
   <main>
     <p>
