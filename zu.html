@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Zuzanna Sczyrba | OverSailed.com</title>
+  <meta name="title" content="Zuzanna Sczyrba | OverSailed.com">
+  <meta name="description" content="Zuzanna Sczyrba Home Page">
+  <meta name="keywords" content="Zuzanna Sczyrba, OverSailed, sailing, film, cinematography, photography, STS Generał Zaruski, Arctic, documentary">
+  <meta name="author" content="Zuzanna Sczyrba">
+  <link rel="canonical" href="https://oversailed.com/zu.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oversailed.com/zu.html">
+  <meta property="og:title" content="Zuzanna Sczyrba | OverSailed.com">
+  <meta property="og:description" content="Sailing, film, photography, and stories from the water.">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://oversailed.com/zu.html">
+  <meta property="twitter:title" content="Zuzanna Sczyrba | OverSailed.com">
+  <meta property="twitter:description" content="Sailing, film, photography, and stories from the water.">
+  <meta property="twitter:image" content="https://oversailed.com/zu-hero.jpg">
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="/ICONHEREPLS">
+
+  <style>
+    .zu-hero-photo {
+      width: 100%;
+      max-height: 70vh;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .story-section {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+      gap: 2rem;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .story-card {
+      background: var(--surface-color);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 12px 24px var(--shadow);
+    }
+
+    .story-card p {
+      color: var(--text-muted);
+      font-size: 1.08rem;
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+    }
+
+    .story-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .portrait-photo {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 24px var(--shadow);
+    }
+
+    .photo-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .photo-strip img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .photo-strip img:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px var(--shadow);
+    }
+
+    .quote-block {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 1.35rem;
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .zu-hero-photo {
+        max-height: 55vh;
+      }
+
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">Oversailed.com</a>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#film">Film</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-controls">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <img class="zu-hero-photo" src="zu-hero.jpg" alt="Sailing atmosphere photograph">
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Zuzanna Sczyrba</h1>
+      <p>I have two passions in life: sailing and film photography. In 2025, I discovered that they can become one story.</p>
+      <div class="cta-buttons">
+        <a href="#about" class="btn primary">About Me</a>
+        <a href="#gallery" class="btn secondary">View Photos</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="about-section story-section">
+    <h2>About Me</h2>
+    <div class="story-grid">
+      <div class="story-card">
+        <p>Hi, my name is Zuzanna Sczyrba.</p>
+        <p>I have two passions in life: sailing and film photography. In 2025, I discovered that they can be combined when I made a documentary film from a month-long voyage of the Polish sailing vessel STS Generał Zaruski to the Arctic.</p>
+        <p>Now I am trying to combine them again.</p>
+        <p>Since 2023, I have been studying cinematography at film school. I began my sailing journey in 2016.</p>
+      </div>
+      <img class="portrait-photo" src="zu-portrait.jpg" alt="Portrait of Zuzanna Sczyrba">
+    </div>
+  </section>
+
+  <section id="film" class="projects-section">
+    <h2>Sailing, Film and Photography</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Arctic Documentary</h3>
+          <span class="badge">2025</span>
+        </div>
+        <p>A documentary film made during a month-long voyage of the Polish sailing vessel STS Generał Zaruski to the Arctic.</p>
+        <div class="tech-stack">
+          <span>sailing</span>
+          <span>documentary</span>
+          <span>cinematography</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Water and Motion</h3>
+          <span class="badge">Ongoing</span>
+        </div>
+        <p>I have always been drawn to water. I used to train swimming, I like diving and windsurfing, and I also shoot a bow.</p>
+        <div class="tech-stack">
+          <span>water</span>
+          <span>travel</span>
+          <span>visual stories</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section story-section">
+    <h2>Stories I Follow</h2>
+    <div class="story-card">
+      <p>I worked as a sailing instructor during Masurian cruises, where Paweł and I met. Now we sail at sea more often.</p>
+      <p>I like spending nights under the stars — on deck, by a campfire, or in a hammock.</p>
+      <p>I enjoy train journeys, and they often appear in my photographs.</p>
+      <p>I also like different kinds of manual work, such as oil painting and drawing.</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="projects-section">
+    <h2>Gallery</h2>
+    <div class="photo-strip">
+      <img src="zu1.jpg" alt="Sailing photograph 1">
+      <img src="zu2.jpg" alt="Sailing photograph 2">
+      <img src="zu3.jpg" alt="Sailing photograph 3">
+      <img src="zu4.jpg" alt="Sailing photograph 4">
+      <img src="zu5.jpg" alt="Sailing photograph 5">
+      <img src="zu6.jpg" alt="Sailing photograph 6">
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>How I See Things</h2>
+    <p class="quote-block">Things are easiest for me to explain through drawings. I am probably a visual thinker, but I also like listening to audiobooks and to people. I believe that an image can communicate everything — maybe that is why I am a cinematographer.</p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Get In Touch</h2>
+    <p>Whether you want to talk about sailing, photography, film, or future projects.</p>
+    <div class="cta-buttons" style="justify-content: center; margin-top: 2rem;">
+      <a href="mailto:CONTACT_EMAIL_HERE" class="btn primary">Send me an Email</a>
+      <a href="index.html" class="btn secondary">Back to OverSailed</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Zuzanna Sczyrba. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
