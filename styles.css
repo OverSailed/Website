@@ -65,12 +65,17 @@ a:hover {
 }
 
 .logo a {
+    display: inline-block;
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--text-main);
     letter-spacing: -0.5px;
+    text-decoration: none;
 }
 
+.logo a:hover {
+    color: var(--text-main);
+}
 .nav-links {
     display: flex;
     align-items: center;
