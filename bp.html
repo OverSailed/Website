@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Paweł Augustyniak | OverSailed.com</title>
+    <meta name="title" content="Paweł Augustyniak | OverSailed.com">
+    <meta name="description" content="Paweł Augustyniak Home Page">
+    <meta name="keywords" content="Paweł Augustyniak, BP, Bi-Pi, Gracil, TradJacht, sailing, yacht, photography, open source">
+    <meta name="author" content="Paweł Augustyniak">
+    <link rel="canonical" href="https://oversailed.com/bp.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oversailed.com/">
+    <meta property="og:title" content="Paweł Augustyniak | Oversailed.com">
+    <meta property="og:description" content="Paweł Augustyniak Home Page">
+
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://oversailed.com/">
+    <meta property="twitter:title" content="Paweł Augustyniak | OverSailed.com">
+    <meta property="twitter:description" content="Paweł Augustyniak Home Page">
+    <meta property="twitter:image" content="https://oversailed.com/Pawel.jpg">
+    
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Page-specific hero background for bp.html */
+        .hero.bp-hero {
+            position: relative;
+            max-width: none;
+            min-height: 78vh;
+            margin: 0;
+            padding: 8rem 5% 6rem;
+            overflow: hidden;
+            background-image:
+                linear-gradient(rgba(13, 17, 23, 0.68), rgba(13, 17, 23, 0.86)),
+                url("Pawel.jpg");
+            background-size: cover;
+            background-position: center 35%;
+            border-bottom: 1px solid var(--border);
+        }
+
+        [data-theme="light"] .hero.bp-hero {
+            background-image:
+                linear-gradient(rgba(246, 248, 250, 0.66), rgba(246, 248, 250, 0.88)),
+                url("Pawel.jpg");
+        }
+
+        .hero.bp-hero .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid rgba(139, 148, 158, 0.25);
+            border-radius: 18px;
+            background: rgba(13, 17, 23, 0.42);
+            box-shadow: 0 18px 45px var(--shadow);
+            backdrop-filter: blur(2px);
+        }
+
+        [data-theme="light"] .hero.bp-hero .hero-content {
+            background: rgba(255, 255, 255, 0.58);
+        }
+
+        .hero.bp-hero .hero-content p {
+            color: var(--text-main);
+        }
+
+        @media (max-width: 768px) {
+            .hero.bp-hero {
+                min-height: auto;
+                padding: 6rem 5% 4rem;
+                background-position: center top;
+            }
+
+            .hero.bp-hero .hero-content {
+                padding: 1.4rem;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">OverSailed.com</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="https://github.com/oversailed" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero bp-hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Paweł Augustyniak</h1>
+            <span id="age-display" class="age-badge">24yo</span>
+            <p>I’m passionate about both sailing and science, and for as long as I can remember, I have been combining these two interests. One of my recent projects involves designing and building an autonomous sailing vessel as a proof of concept for a low-cost, emission-free mode of transportation.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="https://github.com/oversailed" class="btn secondary" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>I graduated with a Bachelor's degree in Yacht Design from the West Pomeranian University of Technology in 2024. Currently, I am pursuing a Master's degree in Electronics and Telecommunications at the Silesian University of Technology.<br>
+I am a member of several student research groups and organizations, including Silesian Aerospace Technologies and Trådstudio.</p>
+            <p>I am also a certified sailing yacht skipper (up to 18 m LOA), a sailing instructor, and a certified camp counselor.</p>
+            <p>My competencies and experience span a wide range of fields, including electronics, radio communication, sailing, FDM and SLA 3D printing, retro photography, and skiing.</p>
+<p>I speak English at a communicative level, as well as some German and Russian. </p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>TrådJacht</h3>
+                    <span class="badge">In Development</span>
+                </div>
+                <p>The main costs in maritime transport are fuel prices and crew labor costs. In addition, although it is the most efficient form of transportation, maritime transport is responsible for 3% of global CO2 emissions and a significant share of global methane emissions.
+Reducing operating costs and greenhouse gas emissions is possible, through the use of sails, which could be connected into an automated steering system.
+Our project involves developing a model of an autonomous sailing vessel, capable of independent travel from point A to point B, without the use of any kind of a motorised propulsion system.</p>
+                <div class="tech-stack">
+                    <span>maritime transportation</span>
+                    <span>automation</span>
+                    <span>sailing</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://oversailed.com/tradjacht.html" target="_blank">Website &rarr;</a>
+                    <a href="https://github.com/oversailed" target="_blank">Repository &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>S/Y Gracil renovation</h3>
+                    <span class="badge">In 
+Development</span>
+                </div>
+                <p> Renovation of 55 years old "Schellin cruiser" yawl (to be continued...)</p>
+                <div class="tech-stack">
+                    <span>Sailing </span>
+                    <span>restoration</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://oversailed.com/Gracil" target="_blank">Website &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <p>Whether you want to collaborate on a project, talk about hobbies, or just say hi.</p>
+        <div class="cta-buttons" style="justify-content: center; margin-top: 2rem;">
+            <a href="https://discord.gg/4YZHHEGe" class="btn primary">Join the Discord</a>
+            <a href="mailto:pawela07@gmail.com" class="btn secondary">Send me an Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Paweł Augustyniak. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        /* Keep the displayed age fixed on this page even if global script.js calculates it differently. */
+        window.addEventListener('DOMContentLoaded', () => {
+            const ageDisplay = document.getElementById('age-display');
+            if (ageDisplay) {
+                ageDisplay.textContent = '24yo';
+            }
+        });
+    </script>
+</body>
+</html>
