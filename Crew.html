@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OverSailed | Crew</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #111318;
+      color: #e8e8e8;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background: #1f2633;
+      padding: 18px 28px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+
+    .logo a {
+      color: #e8e8e8;
+      text-decoration: none;
+    }
+
+    .logo a:hover {
+      color: #ffffff;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      justify-content: flex-end;
+    }
+
+    .nav-right {
+      justify-content: flex-start;
+    }
+
+    nav a {
+      color: #e8e8e8;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 10px;
+    }
+
+    nav a:hover {
+      background: #30394a;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 56px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      margin: 0 0 16px 0;
+      letter-spacing: 3px;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 0 auto 48px auto;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #cfd3dc;
+    }
+
+    .crew-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(240px, 1fr));
+      gap: 28px;
+      margin-bottom: 64px;
+    }
+
+    .crew-card {
+      display: block;
+      overflow: hidden;
+      background: linear-gradient(135deg, #1f2633, #151922);
+      border: 1px solid #30394a;
+      border-radius: 24px;
+      text-decoration: none;
+      color: #e8e8e8;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .crew-card:hover {
+      transform: translateY(-4px);
+      border-color: #4a5872;
+      background: linear-gradient(135deg, #263043, #181d29);
+    }
+
+    .crew-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .crew-card-content {
+      padding: 30px 28px 36px 28px;
+    }
+
+    .crew-card h2 {
+      margin: 0 0 14px 0;
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+
+    .crew-card p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #cfd3dc;
+    }
+
+    .patrons-footer {
+      max-width: 900px;
+      margin: 0 auto 64px auto;
+      padding: 34px 28px;
+      background: #151922;
+      border: 1px solid #30394a;
+      border-radius: 24px;
+    }
+
+    .patrons-footer h2 {
+      margin: 0 0 12px 0;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    .patrons-footer p {
+      margin: 0 0 22px 0;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #cfd3dc;
+    }
+
+    .support-button {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #ff5f5f;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 999px;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .support-button:hover {
+      background: #ff7777;
+      transform: translateY(-2px);
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: min(30vw, 360px);
+      min-width: 220px;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+    }
+
+    @media (max-width: 700px) {
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .logo {
+        order: 1;
+      }
+
+      .nav-left {
+        order: 2;
+        justify-content: center;
+      }
+
+      .nav-right {
+        order: 3;
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .crew-grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        margin: 40px auto;
+      }
+
+      .gallery img {
+        width: min(90vw, 360px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-left">
+      <a href="crew.html">Crew</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+
+    <div class="logo">
+      <a href="index.html">OverSailed</a>
+    </div>
+
+    <nav class="nav-right">
+      <a href="about.html">About us</a>
+      <a href="support.html">Support us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Crew</h1>
+
+    <p class="intro">
+      Meet the people behind OverSailed — the ones repairing, sailing, filming,
+      documenting and slowly turning this project into something real.
+    </p>
+
+    <section class="crew-grid">
+      <a class="crew-card" href="zu.html">
+        <img src="zu-portrait.jpg" alt="Portrait of Zuza">
+
+        <div class="crew-card-content">
+          <h2>Zuza</h2>
+          <p>
+            Sailing, film, photography and stories told through images.
+          </p>
+        </div>
+      </a>
+
+      <a class="crew-card" href="bp.html">
+        <img src="pawel.jpg" alt="Portrait of Paweł">
+
+        <div class="crew-card-content">
+          <h2>Paweł</h2>
+          <p>
+            Sailing, engineering, electronics and the technical side of the project.
+          </p>
+        </div>
+      </a>
+    </section>
+
+    <footer class="patrons-footer">
+      <h2>Patrons</h2>
+      <p>
+        This place is waiting for the people who help OverSailed keep going.
+        You can become a patron too.
+      </p>
+
+      <a class="support-button" href="https://ko-fi.com/oversailed" target="_blank" rel="noopener noreferrer">
+        Support OverSailed
+      </a>
+    </footer>
+
+    <div class="gallery">
+      <img src="sail1.jpg" alt="Sail image 1">
+      <img src="sail2.jpg" alt="Sail image 2">
+      <img src="sail3.png" alt="Sail image 3">
+    </div>
+  </main>
+</body>
+</html>
