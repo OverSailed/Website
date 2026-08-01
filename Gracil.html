@@ -1,4 +1,318 @@
 <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gracil | OverSailed</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Page-specific header */
+        header {
+            background: var(--surface-color);
+            padding: 18px 28px;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 28px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header .logo {
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-align: center;
+        }
+
+        header .logo a {
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        header nav {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .nav-left {
+            justify-content: flex-end;
+        }
+
+        .nav-right {
+            justify-content: flex-start;
+        }
+
+        header nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 10px;
+        }
+
+        header nav a:hover {
+            background: var(--surface-hover);
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: min(30vw, 360px);
+            min-width: 220px;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 18px 45px var(--shadow);
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            header {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            header .logo {
+                order: 1;
+            }
+
+            .nav-left {
+                order: 2;
+            }
+
+            .nav-right {
+                order: 3;
+            }
+
+            header nav {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-left" aria-label="Primary navigation">
+            <a href="Crew.html">Crew</a>
+            <a href="Updates.html">Updates</a>
+        </nav>
+
+        <div class="logo">
+            <a href="index.html">OverSailed</a>
+        </div>
+
+        <nav class="nav-right" aria-label="Secondary navigation">
+            <a href="about.html">About us</a>
+            <a href="support.html">Support us</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+
+                <h1>Gracil</h1>
+
+                <div class="age-badge">
+                    Schelin Cruiser No. 16 · 1971
+                </div>
+
+                <p>
+                    A classic Swedish sailing yacht undergoing a complete restoration
+                    and preparation for longer offshore voyages.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="#about-gracil" class="btn primary">
+                        About Gracil
+                    </a>
+
+                    <a href="#restoration" class="btn secondary">
+                        Restoration
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- About -->
+        <section id="about-gracil">
+
+            <h2>About Gracil</h2>
+
+            <div class="about-content">
+
+                <p>
+                    <strong>
+                        Gracil is Schelin Cruiser No. 16, a classic Swedish sailing
+                        yacht built in 1971.
+                    </strong>
+                    With a length of approximately 10.5 metres, a narrow 2.7-metre
+                    beam and a shallow-draft keel, she reflects the elegant
+                    proportions and practical offshore character of Scandinavian
+                    yacht design from her era.
+                </p>
+
+                <p>
+                    During her life, Gracil has been modified with an additional
+                    mizzen mast and a bowsprit, giving her a distinctive appearance
+                    and sail plan.
+                </p>
+
+                <p>
+                    Today, she is undergoing an extensive restoration covering the
+                    hull, keel structure, engine, electrical installation and
+                    interior. The aim is to preserve her original character while
+                    improving reliability, safety and suitability for longer
+                    offshore sailing.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Restoration -->
+        <section id="restoration">
+
+            <h2>Restoration</h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <div class="project-header">
+                        <h3>Hull &amp; Keel</h3>
+                        <span class="badge">In progress</span>
+                    </div>
+
+                    <p>
+                        Inspection, repair and preservation of the hull, keel
+                        attachment, underwater fittings and structural elements.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>GRP</span>
+                        <span>Epoxy</span>
+                        <span>Keel</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-header">
+                        <h3>Engine</h3>
+                        <span class="badge">Volvo Penta MD2B</span>
+                    </div>
+
+                    <p>
+                        Overhaul and restoration of the marine diesel installation,
+                        including cooling, exhaust, fuel and electrical systems.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>MD2B</span>
+                        <span>Diesel</span>
+                        <span>12 V</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-header">
+                        <h3>Systems &amp; Interior</h3>
+                        <span class="badge">Planned</span>
+                    </div>
+
+                    <p>
+                        Rebuilding the electrical system, insulation and interior
+                        equipment while keeping the yacht practical, simple and
+                        suitable for extended cruising.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Electrical</span>
+                        <span>Insulation</span>
+                        <span>Interior</span>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Gallery -->
+        <section id="gallery">
+
+            <h2>Gallery</h2>
+
+            <div class="gallery">
+                <img
+                    src="sail1.jpg"
+                    alt="Gracil sailing yacht - view 1"
+                    loading="lazy"
+                >
+
+                <img
+                    src="sail2.jpg"
+                    alt="Gracil sailing yacht - view 2"
+                    loading="lazy"
+                >
+
+                <img
+                    src="sail3.png"
+                    alt="Gracil sailing yacht - view 3"
+                    loading="lazy"
+                >
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <div class="contact-section">
+                <p>
+                    If you want to contact us, join our
+                    <a href="https://discord.gg/4YZHHEGe">
+                        Discord server
+                    </a>.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html><!doctype html>
 <html lang="pl">
 <head>
   <meta charset="utf-8">
