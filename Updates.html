@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OverSailed | About us</title>
+
+  <style>
+    /* ===== BASIC THEME ===== */
+    :root {
+      --bg: #111318;
+      --surface: #151922;
+      --surface-light: #1f2633;
+      --surface-hover: #263043;
+      --border: #30394a;
+      --text-main: #e8e8e8;
+      --text-muted: #cfd3dc;
+      --accent: #ff5f5f;
+      --accent-hover: #ff7777;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* ===== TOPBAR ===== */
+    header {
+      background: var(--surface-light);
+      padding: 18px 28px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+
+    .logo a {
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .logo a:hover {
+      color: #ffffff;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      justify-content: flex-end;
+    }
+
+    .nav-right {
+      justify-content: flex-start;
+    }
+
+    nav a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 10px;
+    }
+
+    nav a:hover {
+      background: var(--border);
+    }
+
+    /* ===== PAGE LAYOUT ===== */
+    main {
+      max-width: 1200px;
+      margin: 56px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      margin: 0 0 16px 0;
+      letter-spacing: 3px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 0 0 24px 0;
+      letter-spacing: 2px;
+    }
+
+    h3 {
+      margin: 0 0 12px 0;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+
+    .intro {
+      max-width: 780px;
+      margin: 0 auto 56px auto;
+      font-size: 18px;
+    }
+
+    section {
+      margin-bottom: 64px;
+    }
+
+    /* ===== REUSABLE CARDS ===== */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: linear-gradient(135deg, var(--surface-light), var(--surface));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 30px 28px;
+      box-shadow: 0 18px 45px var(--shadow);
+      text-align: left;
+    }
+
+    .card p {
+      margin: 0;
+    }
+
+    .wide-card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, var(--surface-light), var(--surface));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 36px 32px;
+      box-shadow: 0 18px 45px var(--shadow);
+      text-align: left;
+    }
+
+    .wide-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ===== PROJECT LINKS ===== */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(240px, 1fr));
+      gap: 28px;
+    }
+
+    .project-card {
+      display: block;
+      background: linear-gradient(135deg, var(--surface-light), var(--surface));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 34px 30px;
+      color: var(--text-main);
+      text-decoration: none;
+      box-shadow: 0 18px 45px var(--shadow);
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+      text-align: left;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: #4a5872;
+      background: linear-gradient(135deg, var(--surface-hover), #181d29);
+    }
+
+    .project-card p {
+      margin-bottom: 0;
+    }
+
+    /* ===== GALLERY ===== */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: min(30vw, 360px);
+      min-width: 220px;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+    }
+
+    /* ===== CALL TO ACTION ===== */
+    .cta-box {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 34px 28px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+    }
+
+    .cta-box p {
+      margin: 0 0 22px 0;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 999px;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .button:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 700px) {
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .logo {
+        order: 1;
+      }
+
+      .nav-left {
+        order: 2;
+        justify-content: center;
+      }
+
+      .nav-right {
+        order: 3;
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      main {
+        margin: 40px auto;
+      }
+
+      .card-grid,
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        width: min(90vw, 360px);
+      }
+
+      .wide-card,
+      .card,
+      .project-card,
+      .cta-box {
+        padding: 28px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== TOPBAR ===== -->
+  <header>
+    <nav class="nav-left">
+      <a href="crew.html">Crew</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+
+    <div class="logo">
+      <a href="index.html">OverSailed</a>
+    </div>
+
+    <nav class="nav-right">
+      <a href="about.html">About us</a>
+      <a href="support.html">Support us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== INTRO ===== -->
+    <section class="about-hero">
+      <h1>About OverSailed</h1>
+
+      <p class="intro">
+        OverSailed boat is great synonim of our projects, apart studying we are also engaged in so many projects that wy barely have time to sleep... <br> If you follow us we will show you some of our "oversailed" Kingdom.
+      </p>
+    </section>
+
+    <!-- ===== WHAT WE DO ===== -->
+    <section>
+      <h2>Some of our projects:</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Travel</h3>
+          <p>
+            We sail, train, test ideas on the water and document what actually works <br>
+            - Hitchhiking trips in all Europe (and Arctic...)<br>
+            - Sailing journeys on Baltic, North and other seas<br> 
+            - Oldschool sailing journeys on Masurian Lakes (middle photo below)  <br>
+            
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Large Projects</h3>
+          <p>
+            - S/Y Gracil restoration (Beautyfull classic yawl from Sweeden, build in 1971)<br>
+            - DIY Marine VHF radio reciever and AIS encoder [MSc Engeenering project]<br> 
+            - DIY Underwater power generator [BSc Engeenering project] <br>
+            - Project of Autonomous Sailing Vessel Model as a Demonstrator of Innovative, Eco-Friendly Transport Systems
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Photography and Documentary</h3>
+          <p>
+            We are fascinated in classic art of Photography and cinematography, we want to show the process of immortalize memories with all aviable technics, like: <br>
+            - Dryplate analog photograpy<br>
+            - DIY Photo-chemistry<br>
+            - Analog Filmmaking<br>
+            
+          </p>
+        </article>
+      </div>
+        <h2>And much more... </h2>
+    </section>
+
+    <!-- ===== PROJECT IDEA ===== -->
+    <section>
+      <h2>Why OverSailed exists</h2>
+
+      <div class="wide-card">
+        <p>
+         We really don't know, probably we have mission to share sailing addiction... it is uncurable 
+        </p>
+
+        <p>
+          to be continued
+        </p>
+
+        <p>
+          to be continued
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== MAIN PROJECTS ===== -->
+    <section>
+      <h2>to be continued</h2>
+
+      <div class="project-grid">
+        <a class="project-card" href="gracil.html">
+          <h3>to be continued</h3>
+          <p>
+            to be continued
+          </p>
+        </a>
+
+        <a class="project-card" href="tradjacht.html">
+          <h3>to be continued</h3>
+          <p>
+            to be continued
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== HOW WE WORK ===== -->
+    <section>
+      <h2>to be continued</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>to be continued</h3>
+          <p>
+            to be continued
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>to be continued</h3>
+          <p>
+            to be continued
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>to be continued</h3>
+          <p>
+            to be continued
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== DEFAULT GALLERY ===== -->
+    <section>
+      <h2>From the projects</h2>
+
+      <div class="gallery">
+        <img src="sail1.jpg" alt="Sailing photo 1">
+        <img src="sail2.jpg" alt="Sailing photo 2">
+        <img src="sail3.png" alt="Sailing photo 3">
+      </div>
+    </section>
+
+    <!-- ===== SUPPORT CTA ===== -->
+    <section>
+      <div class="cta-box">
+        <h2>Support the project</h2>
+        <p>
+          If you like the idea of documenting real sailing, boat renovation and technical
+          work around old yachts, you can help OverSailed keep going.
+        </p>
+
+        <a class="button" href="https://ko-fi.com/oversailed" target="_blank" rel="noopener noreferrer">
+          Support OverSailed
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
