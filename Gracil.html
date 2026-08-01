@@ -210,11 +210,398 @@
                         attachment, underwater fittings and structural elements.
                     </p>
 
-                    <div class="tech-stack">
-                        <span>GRP</span>
-                        <span>Epoxy</span>
-                        <span>Keel</span>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gracil | OverSailed</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Page-specific header */
+        header {
+            background: var(--surface-color);
+            padding: 18px 28px;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 28px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header .logo {
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-align: center;
+        }
+
+        header .logo a {
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        header nav {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .nav-left {
+            justify-content: flex-end;
+        }
+
+        .nav-right {
+            justify-content: flex-start;
+        }
+
+        header nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 10px;
+        }
+
+        header nav a:hover {
+            background: var(--surface-hover);
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: min(30vw, 360px);
+            min-width: 220px;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 18px 45px var(--shadow);
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            header {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            header .logo {
+                order: 1;
+            }
+
+            .nav-left {
+                order: 2;
+            }
+
+            .nav-right {
+                order: 3;
+            }
+
+            header nav {
+                justify-content: center;
+            }
+
+            .gallery img {
+                width: 100%;
+                max-width: 420px;
+                min-width: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="nav-left" aria-label="Primary navigation">
+            <a href="Crew.html">Crew</a>
+            <a href="Updates.html">Updates</a>
+        </nav>
+
+        <div class="logo">
+            <a href="index.html">OverSailed</a>
+        </div>
+
+        <nav class="nav-right" aria-label="Secondary navigation">
+            <a href="about.html">About us</a>
+            <a href="support.html">Support us</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>Gracil</h1>
+
+                <div class="age-badge">
+                    Schelin Cruiser No. 16 · 1971
+                </div>
+
+                <p>
+                    A classic Swedish sailing yacht currently undergoing
+                    a complete restoration for future offshore sailing.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Gallery -->
+        <section id="gallery">
+
+            <div class="gallery">
+
+                <img
+                    src="sail1.jpg"
+                    alt="Gracil, Schelin Cruiser No. 16"
+                >
+
+                <img
+                    src="sail2.jpg"
+                    alt="Gracil sailing yacht"
+                >
+
+                <img
+                    src="sail3.png"
+                    alt="Gracil during the restoration project"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about-gracil">
+
+            <h2>About Gracil</h2>
+
+            <div class="about-content">
+
+                <p>
+                    <strong>
+                        Gracil is Schelin Cruiser No. 16, a classic Swedish
+                        sailing yacht built in 1971.
+                    </strong>
+                    She is approximately 10.5 metres long with a narrow
+                    2.7-metre beam and a shallow-draft keel, giving her the
+                    slender proportions characteristic of Scandinavian yachts
+                    of her era.
+                </p>
+
+                <p>
+                    Over the years, Gracil has been equipped with a mizzen mast
+                    and bowsprit, creating a distinctive sail plan and appearance.
+                </p>
+
+                <p>
+                    Today, she is undergoing an extensive refit covering the
+                    structure, machinery, electrical installation, plumbing
+                    and interior. The aim is to preserve her original character
+                    while improving reliability and preparing her for longer
+                    offshore voyages.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Restoration -->
+        <section id="restoration">
+
+            <h2>Restoration</h2>
+
+            <div class="projects-grid">
+
+
+                <!-- Hull -->
+                <article class="project-card">
+
+                    <div class="project-header">
+                        <h3>Hull &amp; Keel</h3>
+                        <span class="badge">Structural refit</span>
                     </div>
+
+                    <p>
+                        Inspection and repair of the hull and keel structure,
+                        including keel attachment, underwater fittings and
+                        protection of the laminate below the waterline.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Keel bolts</span>
+                        <span>Laminate repair</span>
+                        <span>Through-hulls</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Engine -->
+                <article class="project-card">
+
+                    <div class="project-header">
+                        <h3>Engine</h3>
+                        <span class="badge">Mechanical overhaul</span>
+                    </div>
+
+                    <p>
+                        Restoration of the Volvo Penta MD2B installation,
+                        including the cooling system, fuel system, exhaust
+                        and associated mechanical components.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Volvo Penta MD2B</span>
+                        <span>Raw-water cooling</span>
+                        <span>Wet exhaust</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Electrical -->
+                <article class="project-card">
+
+                    <div class="project-header">
+                        <h3>Electrical System</h3>
+                        <span class="badge">Electrical refit</span>
+                    </div>
+
+                    <p>
+                        Rebuilding the yacht's electrical installation with
+                        new distribution, protection, battery monitoring
+                        and charging systems.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>12 V DC</span>
+                        <span>Battery system</span>
+                        <span>Solar charging</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Interior -->
+                <article class="project-card">
+
+                    <div class="project-header">
+                        <h3>Interior</h3>
+                        <span class="badge">Interior refit</span>
+                    </div>
+
+                    <p>
+                        Restoring the interior while improving insulation,
+                        ventilation and practical storage for extended
+                        cruising.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Thermal insulation</span>
+                        <span>Ventilation</span>
+                        <span>Cabinetry</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Plumbing -->
+                <article class="project-card">
+
+                    <div class="project-header">
+                        <h3>Plumbing</h3>
+                        <span class="badge">Systems refit</span>
+                    </div>
+
+                    <p>
+                        Replacing and reorganising seawater and freshwater
+                        systems, including valves, through-hulls, sanitation
+                        and drainage.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Seacocks</span>
+                        <span>Fresh water</span>
+                        <span>Sanitation</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Rig -->
+                <article class="project-card">
+
+                    <div class="project-header">
+                        <h3>Rig &amp; Deck</h3>
+                        <span class="badge">Deck refit</span>
+                    </div>
+
+                    <p>
+                        Inspection and restoration of the deck hardware,
+                        standing and running rigging, bowsprit and the
+                        yacht's distinctive mizzen rig.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Standing rigging</span>
+                        <span>Bowsprit</span>
+                        <span>Mizzen</span>
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <div class="contact-section">
+
+                <p>
+                    Follow the restoration or contact us through our
+                    <a href="https://discord.gg/4YZHHEGe">
+                        Discord server
+                    </a>.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
 
                 </article>
 
