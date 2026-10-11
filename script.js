@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* calculate age */
-    const birthDate = new Date('2003-10-31'); //hello there curious goober looking for my birthday! I appreciate you~~
+    const birthDate = new Date('2001-11-14'); //hello there curious goober looking for my birthday! I appreciate you~~
     const today = new Date();
     let age = today.getFullYear() - birthDate.getFullYear();
     const m = today.getMonth() - birthDate.getMonth();
