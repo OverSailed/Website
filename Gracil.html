@@ -1,960 +1,131 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Gracil | OverSailed</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <style>
-        /* Page-specific header */
-        header {
-            background: var(--surface-color);
-            padding: 18px 28px;
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            gap: 28px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        header .logo {
-            font-size: 36px;
-            font-weight: 800;
-            letter-spacing: 4px;
-            text-align: center;
-        }
-
-        header .logo a {
-            color: var(--text-main);
-            text-decoration: none;
-        }
-
-        header nav {
-            display: flex;
-            gap: 18px;
-            flex-wrap: wrap;
-        }
-
-        .nav-left {
-            justify-content: flex-end;
-        }
-
-        .nav-right {
-            justify-content: flex-start;
-        }
-
-        header nav a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 16px;
-            padding: 8px 12px;
-            border-radius: 10px;
-        }
-
-        header nav a:hover {
-            background: var(--surface-hover);
-        }
-
-        /* Gallery */
-        .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .gallery img {
-            width: min(30vw, 360px);
-            min-width: 220px;
-            aspect-ratio: 3 / 4;
-            object-fit: cover;
-            border-radius: 18px;
-            box-shadow: 0 18px 45px var(--shadow);
-        }
-
-        /* Mobile */
-        @media (max-width: 700px) {
-            header {
-                display: flex;
-                flex-direction: column;
-                gap: 14px;
-            }
-
-            header .logo {
-                order: 1;
-            }
-
-            .nav-left {
-                order: 2;
-            }
-
-            .nav-right {
-                order: 3;
-            }
-
-            header nav {
-                justify-content: center;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <nav class="nav-left" aria-label="Primary navigation">
-            <a href="Crew.html">Crew</a>
-            <a href="Updates.html">Updates</a>
-        </nav>
-
-        <div class="logo">
-            <a href="index.html">OverSailed</a>
-        </div>
-
-        <nav class="nav-right" aria-label="Secondary navigation">
-            <a href="about.html">About us</a>
-            <a href="support.html">Support us</a>
-        </nav>
-    </header>
-
-
-    <main>
-
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-content">
-
-                <h1>Gracil</h1>
-
-                <div class="age-badge">
-                    Schelin Cruiser No. 16 · 1971
-                </div>
-
-                <p>
-                    A classic Swedish sailing yacht undergoing a complete restoration
-                    and preparation for longer offshore voyages.
-                </p>
-
-                <div class="cta-buttons">
-                    <a href="#about-gracil" class="btn primary">
-                        About Gracil
-                    </a>
-
-                    <a href="#restoration" class="btn secondary">
-                        Restoration
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- About -->
-        <section id="about-gracil">
-
-            <h2>About Gracil</h2>
-
-            <div class="about-content">
-
-                <p>
-                    <strong>
-                        Gracil is Schelin Cruiser No. 16, a classic Swedish sailing
-                        yacht built in 1971.
-                    </strong>
-                    With a length of approximately 10.5 metres, a narrow 2.7-metre
-                    beam and a shallow-draft keel, she reflects the elegant
-                    proportions and practical offshore character of Scandinavian
-                    yacht design from her era.
-                </p>
-
-                <p>
-                    During her life, Gracil has been modified with an additional
-                    mizzen mast and a bowsprit, giving her a distinctive appearance
-                    and sail plan.
-                </p>
-
-                <p>
-                    Today, she is undergoing an extensive restoration covering the
-                    hull, keel structure, engine, electrical installation and
-                    interior. The aim is to preserve her original character while
-                    improving reliability, safety and suitability for longer
-                    offshore sailing.
-                </p>
-
-            </div>
-        </section>
-
-
-        <!-- Restoration -->
-        <section id="restoration">
-
-            <h2>Restoration</h2>
-
-            <div class="projects-grid">
-
-                <article class="project-card">
-
-                    <div class="project-header">
-                        <h3>Hull &amp; Keel</h3>
-                        <span class="badge">In progress</span>
-                    </div>
-
-                    <p>
-                        Inspection, repair and preservation of the hull, keel
-                        attachment, underwater fittings and structural elements.
-                    </p>
-
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Gracil | OverSailed</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <style>
-        /* Page-specific header */
-        header {
-            background: var(--surface-color);
-            padding: 18px 28px;
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            gap: 28px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        header .logo {
-            font-size: 36px;
-            font-weight: 800;
-            letter-spacing: 4px;
-            text-align: center;
-        }
-
-        header .logo a {
-            color: var(--text-main);
-            text-decoration: none;
-        }
-
-        header nav {
-            display: flex;
-            gap: 18px;
-            flex-wrap: wrap;
-        }
-
-        .nav-left {
-            justify-content: flex-end;
-        }
-
-        .nav-right {
-            justify-content: flex-start;
-        }
-
-        header nav a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 16px;
-            padding: 8px 12px;
-            border-radius: 10px;
-        }
-
-        header nav a:hover {
-            background: var(--surface-hover);
-        }
-
-        /* Gallery */
-        .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .gallery img {
-            width: min(30vw, 360px);
-            min-width: 220px;
-            aspect-ratio: 3 / 4;
-            object-fit: cover;
-            border-radius: 18px;
-            box-shadow: 0 18px 45px var(--shadow);
-        }
-
-        /* Mobile */
-        @media (max-width: 700px) {
-            header {
-                display: flex;
-                flex-direction: column;
-                gap: 14px;
-            }
-
-            header .logo {
-                order: 1;
-            }
-
-            .nav-left {
-                order: 2;
-            }
-
-            .nav-right {
-                order: 3;
-            }
-
-            header nav {
-                justify-content: center;
-            }
-
-            .gallery img {
-                width: 100%;
-                max-width: 420px;
-                min-width: 0;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-
-        <nav class="nav-left" aria-label="Primary navigation">
-            <a href="Crew.html">Crew</a>
-            <a href="Updates.html">Updates</a>
-        </nav>
-
-        <div class="logo">
-            <a href="index.html">OverSailed</a>
-        </div>
-
-        <nav class="nav-right" aria-label="Secondary navigation">
-            <a href="about.html">About us</a>
-            <a href="support.html">Support us</a>
-        </nav>
-
-    </header>
-
-
-    <main>
-
-        <!-- Hero -->
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <h1>Gracil</h1>
-
-                <div class="age-badge">
-                    Schelin Cruiser No. 16 · 1971
-                </div>
-
-                <p>
-                    A classic Swedish sailing yacht currently undergoing
-                    a complete restoration for future offshore sailing.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- Gallery -->
-        <section id="gallery">
-
-            <div class="gallery">
-
-                <img
-                    src="sail1.jpg"
-                    alt="Gracil, Schelin Cruiser No. 16"
-                >
-
-                <img
-                    src="sail2.jpg"
-                    alt="Gracil sailing yacht"
-                >
-
-                <img
-                    src="sail3.png"
-                    alt="Gracil during the restoration project"
-                >
-
-            </div>
-
-        </section>
-
-
-        <!-- About -->
-        <section id="about-gracil">
-
-            <h2>About Gracil</h2>
-
-            <div class="about-content">
-
-                <p>
-                    <strong>
-                        Gracil is Schelin Cruiser No. 16, a classic Swedish
-                        sailing yacht built in 1971.
-                    </strong>
-                    She is approximately 10.5 metres long with a narrow
-                    2.7-metre beam and a shallow-draft keel, giving her the
-                    slender proportions characteristic of Scandinavian yachts
-                    of her era.
-                </p>
-
-                <p>
-                    Over the years, Gracil has been equipped with a mizzen mast
-                    and bowsprit, creating a distinctive sail plan and appearance.
-                </p>
-
-                <p>
-                    Today, she is undergoing an extensive refit covering the
-                    structure, machinery, electrical installation, plumbing
-                    and interior. The aim is to preserve her original character
-                    while improving reliability and preparing her for longer
-                    offshore voyages.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- Restoration -->
-        <section id="restoration">
-
-            <h2>Restoration</h2>
-
-            <div class="projects-grid">
-
-
-                <!-- Hull -->
-                <article class="project-card">
-
-                    <div class="project-header">
-                        <h3>Hull &amp; Keel</h3>
-                        <span class="badge">Structural refit</span>
-                    </div>
-
-                    <p>
-                        Inspection and repair of the hull and keel structure,
-                        including keel attachment, underwater fittings and
-                        protection of the laminate below the waterline.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>Keel bolts</span>
-                        <span>Laminate repair</span>
-                        <span>Through-hulls</span>
-                    </div>
-
-                </article>
-
-
-                <!-- Engine -->
-                <article class="project-card">
-
-                    <div class="project-header">
-                        <h3>Engine</h3>
-                        <span class="badge">Mechanical overhaul</span>
-                    </div>
-
-                    <p>
-                        Restoration of the Volvo Penta MD2B installation,
-                        including the cooling system, fuel system, exhaust
-                        and associated mechanical components.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>Volvo Penta MD2B</span>
-                        <span>Raw-water cooling</span>
-                        <span>Wet exhaust</span>
-                    </div>
-
-                </article>
-
-
-                <!-- Electrical -->
-                <article class="project-card">
-
-                    <div class="project-header">
-                        <h3>Electrical System</h3>
-                        <span class="badge">Electrical refit</span>
-                    </div>
-
-                    <p>
-                        Rebuilding the yacht's electrical installation with
-                        new distribution, protection, battery monitoring
-                        and charging systems.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>12 V DC</span>
-                        <span>Battery system</span>
-                        <span>Solar charging</span>
-                    </div>
-
-                </article>
-
-
-                <!-- Interior -->
-                <article class="project-card">
-
-                    <div class="project-header">
-                        <h3>Interior</h3>
-                        <span class="badge">Interior refit</span>
-                    </div>
-
-                    <p>
-                        Restoring the interior while improving insulation,
-                        ventilation and practical storage for extended
-                        cruising.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>Thermal insulation</span>
-                        <span>Ventilation</span>
-                        <span>Cabinetry</span>
-                    </div>
-
-                </article>
-
-
-                <!-- Plumbing -->
-                <article class="project-card">
-
-                    <div class="project-header">
-                        <h3>Plumbing</h3>
-                        <span class="badge">Systems refit</span>
-                    </div>
-
-                    <p>
-                        Replacing and reorganising seawater and freshwater
-                        systems, including valves, through-hulls, sanitation
-                        and drainage.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>Seacocks</span>
-                        <span>Fresh water</span>
-                        <span>Sanitation</span>
-                    </div>
-
-                </article>
-
-
-                <!-- Rig -->
-                <article class="project-card">
-
-                    <div class="project-header">
-                        <h3>Rig &amp; Deck</h3>
-                        <span class="badge">Deck refit</span>
-                    </div>
-
-                    <p>
-                        Inspection and restoration of the deck hardware,
-                        standing and running rigging, bowsprit and the
-                        yacht's distinctive mizzen rig.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>Standing rigging</span>
-                        <span>Bowsprit</span>
-                        <span>Mizzen</span>
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- Contact -->
-        <section id="contact">
-
-            <h2>Contact</h2>
-
-            <div class="contact-section">
-
-                <p>
-                    Follow the restoration or contact us through our
-                    <a href="https://discord.gg/4YZHHEGe">
-                        Discord server
-                    </a>.
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
-
-</body>
-
-</html>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-header">
-                        <h3>Engine</h3>
-                        <span class="badge">Volvo Penta MD2B</span>
-                    </div>
-
-                    <p>
-                        Overhaul and restoration of the marine diesel installation,
-                        including cooling, exhaust, fuel and electrical systems.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>MD2B</span>
-                        <span>Diesel</span>
-                        <span>12 V</span>
-                    </div>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-header">
-                        <h3>Systems &amp; Interior</h3>
-                        <span class="badge">Planned</span>
-                    </div>
-
-                    <p>
-                        Rebuilding the electrical system, insulation and interior
-                        equipment while keeping the yacht practical, simple and
-                        suitable for extended cruising.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>Electrical</span>
-                        <span>Insulation</span>
-                        <span>Interior</span>
-                    </div>
-
-                </article>
-
-            </div>
-        </section>
-
-
-        <!-- Gallery -->
-        <section id="gallery">
-
-            <h2>Gallery</h2>
-
-            <div class="gallery">
-                <img
-                    src="sail1.jpg"
-                    alt="Gracil sailing yacht - view 1"
-                    loading="lazy"
-                >
-
-                <img
-                    src="sail2.jpg"
-                    alt="Gracil sailing yacht - view 2"
-                    loading="lazy"
-                >
-
-                <img
-                    src="sail3.png"
-                    alt="Gracil sailing yacht - view 3"
-                    loading="lazy"
-                >
-            </div>
-
-        </section>
-
-
-        <!-- Contact -->
-        <section id="contact">
-
-            <h2>Contact</h2>
-
-            <div class="contact-section">
-                <p>
-                    If you want to contact us, join our
-                    <a href="https://discord.gg/4YZHHEGe">
-                        Discord server
-                    </a>.
-                </p>
-            </div>
-
-        </section>
-
-    </main>
-
-</body>
-</html><!doctype html>
-<html lang="pl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OverSailed</title>
+  <meta name="theme-color" content="#111318">
+  <title>Gracil | Schelin Cruiser Restoration | OverSailed</title>
+  <meta name="description" content="Follow the restoration of Gracil, a 1971 Schelin Cruiser yawl: hull repairs, a Volvo Penta MD2B rebuild and a new chapter under sail with OverSailed.">
+  <link rel="canonical" href="https://oversailed.com/Gracil.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OverSailed">
+  <meta property="og:title" content="Gracil: a new chapter under sail">
+  <meta property="og:description" content="Four friends restoring a 1971 Schelin Cruiser and documenting the work along the way.">
+  <meta property="og:url" content="https://oversailed.com/Gracil.html">
+  <meta name="twitter:card" content="summary">
+  <!-- Self-contained page: no changes to styles.css or script.js are needed. -->
   <style>
-    body {
-      margin: 0;
-      background: #111318;
-      color: #e8e8e8;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-       header {
-      background: #1f2633;
-      padding: 18px 28px;
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center;
-      gap: 28px;
-    }
-    
-    .logo {
-      font-size: 36px;
-      font-weight: 800;
-      letter-spacing: 4px;
-      text-align: center;
-    }
-
-    .logo a {
-      color: var(--text-main);
-      text-decoration: none;
-    }
-    
-    nav {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-    
-    .nav-left {
-      justify-content: flex-end;
-    }
-    
-    .nav-right {
-      justify-content: flex-start;
-    }
-    
-    nav a {
-      color: #e8e8e8;
-      text-decoration: none;
-      font-size: 16px;
-      padding: 8px 12px;
-      border-radius: 10px;
-    }
-    
-    nav a:hover {
-      background: #30394a;
-    }
-    
-    @media (max-width: 700px) {
-      header {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-      }
-    
-      .logo {
-        order: 1;
-      }
-    
-      .nav-left {
-        order: 2;
-      }
-    
-      .nav-right {
-        order: 3;
-      }
-    
-      nav {
-        justify-content: center;
-      }
-    }
-        
-    main {
-      max-width: 1400px;
-      margin: 48px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.7;
-      color: #cfd3dc;
-      margin-bottom: 36px;
-    }
-
-    .gallery {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    
-    .gallery img {
-      width: min(30vw, 360px);
-      min-width: 220px;
-      aspect-ratio: 3 / 4;
-      object-fit: cover;
-      border-radius: 18px;
-      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
-    }
+    :root{color-scheme:dark;--bg:#111318;--surface:#151922;--header:#1f2633;--border:#30394a;--text:#e8e8e8;--muted:#cfd3dc;--accent:#ff7777;--shadow:rgba(0,0,0,.3)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.7}a{color:var(--accent);text-underline-offset:4px}a:hover{color:#ffa5a5}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px;border-radius:4px}img{display:block;max-width:100%;height:auto}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.2}p{color:var(--muted)}
+    .skip-link{position:absolute;left:16px;top:8px;transform:translateY(-160%);padding:8px 16px;background:var(--text);color:var(--bg);z-index:10}.skip-link:focus{transform:none}
+    header{background:var(--header);padding:18px 28px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:28px}header nav{display:flex;gap:18px;flex-wrap:wrap}.nav-left{justify-content:flex-end}.nav-right{justify-content:flex-start}header nav a{color:var(--text);text-decoration:none;font-size:16px;padding:8px 12px;border-radius:10px}header nav a:hover{color:var(--text);background:var(--border)}.logo{font-size:36px;font-weight:800;letter-spacing:4px;text-align:center}.logo a{color:var(--text);text-decoration:none}
+    main{max-width:1160px;margin:auto;padding:0 24px}.hero{text-align:center;padding:76px 0 30px;max-width:820px;margin:auto}.eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}h1{font-size:clamp(52px,10vw,92px);letter-spacing:2px;margin-bottom:14px}.identity{display:inline-block;color:var(--text);border:1px solid var(--border);border-radius:999px;padding:7px 18px;margin-bottom:24px;font-size:14px}.hero .lead{font-size:clamp(18px,3vw,22px);max-width:690px;margin:0 auto 28px}.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.button{display:inline-block;padding:11px 22px;border-radius:999px;background:var(--accent);color:#111318;font-weight:700;text-decoration:none;border:1px solid var(--accent)}.button:hover{background:#ffa5a5;color:#111318}.button.secondary{background:transparent;border-color:var(--border);color:var(--text)}.button.secondary:hover{background:var(--header)}
+    section{padding:52px 0;border-top:1px solid var(--border);scroll-margin-top:24px}h2{font-size:clamp(28px,5vw,42px);margin-bottom:22px;letter-spacing:.5px}h3{font-size:22px;margin-bottom:14px}.section-intro{max-width:750px;margin-bottom:28px}.gallery-section{border:0;padding:26px 0 48px}.gallery-section h2{font-size:23px;text-align:center;margin-bottom:22px}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.gallery figure{margin:0;min-width:0}.gallery a{display:block;border-radius:18px}.gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:18px;box-shadow:0 18px 45px var(--shadow)}figcaption{color:var(--muted);font-size:13px;margin-top:10px}.gallery-note{font-size:13px;text-align:center;margin:18px auto 0;max-width:720px}
+    .story{max-width:820px}.story p:last-child{margin-bottom:0}.spec-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:start}.panel,.card{background:linear-gradient(135deg,var(--header),var(--surface));border:1px solid var(--border);border-radius:22px;padding:28px;min-width:0}.panel h3{margin-bottom:18px}table{width:100%;border-collapse:collapse;font-size:15px}caption{text-align:left;color:var(--muted);font-size:13px;margin-bottom:14px}th,td{padding:11px 0;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}th{font-weight:400;color:var(--muted);width:52%;padding-right:16px}td{font-weight:700}tr:last-child th,tr:last-child td{border-bottom:0}.note{font-size:13px;color:var(--muted);margin:18px 0 0}.facts{margin:0}.facts div{padding:10px 0;border-bottom:1px solid var(--border)}.facts div:last-child{border:0}.facts dt{color:var(--muted);font-size:13px}.facts dd{margin:2px 0 0;font-weight:700}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.card p{margin-bottom:18px}.card p:last-child{margin-bottom:0}.status{display:inline-block;color:#d9e8ff;background:#26364d;border:1px solid #425873;padding:4px 10px;border-radius:999px;font-size:12px;margin-bottom:18px}.status.planned{color:#e0dfec;background:#2c2b39;border-color:#4c4a60}.tags{list-style:none;display:flex;gap:8px;flex-wrap:wrap;padding:0;margin:0}.tags li{font-size:12px;padding:3px 9px;border:1px solid var(--border);border-radius:6px;color:var(--muted)}
+    .milestones{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.milestones li{border-left:2px solid var(--accent);padding-left:20px}.milestones h3{font-size:19px}.milestones p{margin-bottom:0;font-size:15px}.milestones time,.milestones .phase{display:block;color:var(--accent);font-size:13px;font-weight:700;margin-bottom:9px}.cta{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:28px}.cta .actions{justify-content:flex-start}.cta h3{margin-bottom:14px}.cta p:last-child{margin-bottom:0}footer{text-align:center;background:var(--surface);border-top:1px solid var(--border);padding:26px 20px;color:var(--muted);font-size:13px}footer p{margin:0}footer a{color:var(--muted)}
+    @media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.spec-layout,.cta{grid-template-columns:1fr}header{gap:16px;padding-inline:20px}header nav{gap:6px}header nav a{padding-inline:8px}}
+    @media(max-width:700px){header{display:flex;flex-direction:column;gap:12px}.logo{order:1;font-size:32px}.nav-left{order:2}.nav-right{order:3}header nav,.nav-left,.nav-right{justify-content:center}.hero{padding-top:48px}.gallery{gap:14px}.milestones{grid-template-columns:1fr;gap:26px}main{padding-inline:20px}section{padding-block:38px}.panel,.card{padding:24px}.gallery-section{padding-top:20px}.identity{font-size:12px}}
+    @media(max-width:480px){.cards{grid-template-columns:1fr}.gallery{grid-template-columns:1fr;max-width:360px;margin:auto}.gallery img{aspect-ratio:3/4}h1{font-size:58px}.logo{font-size:28px;letter-spacing:3px}th,td{font-size:14px}.actions .button{padding-inline:18px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header>
-    <nav class="nav-left">
-      <a href="Crew.html">Crew</a>
-      <a href="Updates.html">Updates</a>
+    <nav class="nav-left" aria-label="Primary navigation">
+      <a href="Crew.html">Crew</a><a href="Updates.html">Updates</a>
     </nav>
-  
-    <div class="logo">
-      <a href="index.html">OverSailed</a>
-    </div>
-  
-    <nav class="nav-right">
-      <a href="about.html">About us</a>
-      <a href="support.html">Support us</a>
+    <div class="logo"><a href="index.html">OverSailed</a></div>
+    <nav class="nav-right" aria-label="Secondary navigation">
+      <a href="about.html">About us</a><a href="support.html">Support us</a>
     </nav>
   </header>
-
-  <main>
-    <p>
-      ~~~~ HELLO WORD! ~~~~<br>
-      Gracil <br>
-      Gracil <br>
-    </p>
-<section class="hero">
-    <div class="hero-content">
-        <h1>Gracil</h1>
-
-        <div class="age-badge">
-            Schelin Cruiser No. 16 · 1971
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title" style="border-top:0">
+      <p class="eyebrow">An OverSailed restoration project</p>
+      <h1 id="page-title">Gracil</h1>
+      <p class="identity">Schelin Cruiser No. 16 &middot; Built in Sweden, 1971</p>
+      <p class="lead">An old yacht, four friends and a new chapter under sail. We are restoring Gracil, a classic Swedish yawl, and documenting the work that will bring her back to sea.</p>
+      <div class="actions"><a class="button" href="#restoration">Explore the restoration</a><a class="button secondary" href="#about-gracil">Meet the boat</a></div>
+    </section>
+    <!-- These existing images show OverSailed voyages, not verified photographs of Gracil. -->
+    <section class="gallery-section" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Life under sail</h2>
+      <div class="gallery">
+        <figure><a href="sail1.jpg" aria-label="Open the northern lights photograph"><img src="sail1.jpg" width="329" height="438" alt="Green northern lights above the dark silhouette of a sailing vessel and its rigging" decoding="async"></a><figcaption>Northern lights above the rigging.</figcaption></figure>
+        <figure><a href="sail2.jpg" aria-label="Open the evening aboard photograph"><img src="sail2.jpg" width="393" height="521" alt="A group gathered aboard a sailing boat at night, with one person playing a guitar" decoding="async"></a><figcaption>Music and company after dark.</figcaption></figure>
+        <figure><a href="sail3.png" aria-label="Open the sails at night photograph"><img src="sail3.png" width="325" height="431" alt="Sails and rigging against a dark blue night sky" decoding="async"></a><figcaption>A different view of the night sky.</figcaption></figure>
+      </div>
+      <p class="gallery-note">Scenes from our other voyages: a reminder of why we want to get Gracil sailing again. Select a photograph to view it full size.</p>
+    </section>
+    <section id="about-gracil" aria-labelledby="about-title">
+      <div class="story">
+        <p class="eyebrow">The boat and her story</p><h2 id="about-title">A classic worth bringing back</h2>
+        <p><strong>Gracil is hull No. 16 of the Schelin Cruiser design, built in 1971 with a glass-reinforced plastic hull.</strong> Her narrow lines and long overhangs give her the unmistakable appearance of a Scandinavian yacht from her era.</p>
+        <p>Designed by Oscar Schelin, the Schelin Cruiser first appeared in 1964. The earliest boats were wooden; the design later moved into fibreglass production. Gracil was subsequently converted to a yawl, with an additional mizzen mast, and also carries a bowsprit.</p>
+        <p>She has a racing past as well as a cruising one. Plaques still fixed in her saloon record participation in Swedish regattas: small traces of a sailing life we hope to continue.</p>
+        <p>We bought her in spring 2026, after two seasons ashore. Under the old coatings we found that the work went much deeper than a fresh coat of paint. Since then, our time has gone into stripping the hull, investigating its condition and taking apart the machinery.</p>
+        <p>Our aim is to preserve her character while rebuilding the systems needed for dependable cruising. We want to understand the boat we sail, from the laminate and keel attachment to the engine and electrical installation.</p>
+      </div>
+    </section>
+    <section id="specifications" aria-labelledby="spec-title">
+      <h2 id="spec-title">The design in numbers</h2>
+      <div class="spec-layout">
+        <div class="panel">
+          <h3>Schelin Cruiser</h3>
+          <table><caption>Published specifications for the original model</caption><tbody>
+            <tr><th scope="row">Length overall</th><td>10.50 m</td></tr>
+            <tr><th scope="row">Waterline length</th><td>7.40 m</td></tr>
+            <tr><th scope="row">Beam</th><td>2.72 m</td></tr>
+            <tr><th scope="row">Draft</th><td>1.42 m</td></tr>
+            <tr><th scope="row">Displacement</th><td>4,500 kg</td></tr>
+            <tr><th scope="row">Ballast</th><td>2,130 kg</td></tr>
+            <tr><th scope="row">Original rig</th><td>Masthead sloop</td></tr>
+            <tr><th scope="row">Designer</th><td>Oscar Schelin</td></tr>
+          </tbody></table>
+          <p class="note">Source: <a href="https://sailboatdata.com/sailboat/schelin-cruiser/">Sailboatdata: Schelin Cruiser</a>. These are model specifications, not a current measurement or weighing of Gracil. Her later modifications and cruising equipment may change her overall dimensions and displacement.</p>
         </div>
-
-        <p>
-            A classic Swedish sailing yacht undergoing a complete restoration
-            and preparation for longer offshore voyages.
-        </p>
-
-        <div class="cta-buttons">
-            <a href="#about-gracil" class="btn primary">About Gracil</a>
-            <a href="#restoration" class="btn secondary">Restoration</a>
-        </div>
-    </div>
-</section>
-
-<section id="about-gracil">
-    <h2>About Gracil</h2>
-
-    <div class="about-content">
-        <p>
-            <strong>Gracil is Schelin Cruiser No. 16, a classic Swedish sailing yacht
-            built in 1971.</strong> With a length of approximately 10.5 metres,
-            a narrow 2.7-metre beam and a shallow-draft keel, she reflects the
-            elegant proportions and practical offshore character of Scandinavian
-            yacht design from her era.
-        </p>
-
-        <p>
-            During her life, Gracil has been modified with an additional mizzen mast
-            and a bowsprit, giving her a distinctive appearance and sail plan.
-        </p>
-
-        <p>
-            Today, she is undergoing an extensive restoration covering the hull,
-            keel structure, engine, electrical installation and interior.
-            The aim is to preserve her original character while improving reliability,
-            safety and suitability for longer offshore sailing.
-        </p>
-    </div>
-</section>
-
-<section id="restoration">
-    <h2>Restoration</h2>
-
-    <div class="projects-grid">
-
-        <div class="project-card">
-            <div class="project-header">
-                <h3>Hull & Keel</h3>
-                <span class="badge">In progress</span>
-            </div>
-
-            <p>
-                Inspection, repair and preservation of the hull, keel attachment,
-                underwater fittings and structural elements.
-            </p>
-
-            <div class="tech-stack">
-                <span>GRP</span>
-                <span>Epoxy</span>
-                <span>Keel</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-header">
-                <h3>Engine</h3>
-                <span class="badge">Volvo Penta MD2B</span>
-            </div>
-
-            <p>
-                Overhaul and restoration of the original marine diesel installation,
-                including cooling, exhaust, fuel and electrical systems.
-            </p>
-
-            <div class="tech-stack">
-                <span>MD2B</span>
-                <span>Diesel</span>
-                <span>12 V</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-header">
-                <h3>Systems & Interior</h3>
-                <span class="badge">Planned</span>
-            </div>
-
-            <p>
-                Rebuilding the electrical system, insulation and interior equipment
-                while keeping the yacht practical, simple and suitable for extended cruising.
-            </p>
-
-            <div class="tech-stack">
-                <span>Electrical</span>
-                <span>Insulation</span>
-                <span>Interior</span>
-            </div>
-        </div>
-
-    </div>
-</section>
-    <div class="gallery">
-  <img src="sail1.jpg" alt="Sail image 1">
-  <img src="sail2.jpg" alt="Sail image 2">
-  <img src="sail3.png" alt="Sail image 3">
-</div>
-
-    <p>
-       If you want to contact me, please use this link: discord.gg/4YZHHEGe
-    </p>
-    
+        <aside class="panel" aria-labelledby="gracil-facts-title">
+          <h3 id="gracil-facts-title">Gracil today</h3>
+          <dl class="facts">
+            <div><dt>Year built</dt><dd>1971</dd></div>
+            <div><dt>Hull number</dt><dd>16</dd></div>
+            <div><dt>Hull construction</dt><dd>GRP / fibreglass</dd></div>
+            <div><dt>Current rig</dt><dd>Yawl, with a bowsprit</dd></div>
+            <div><dt>Engine</dt><dd>Volvo Penta MD2B diesel</dd></div>
+            <div><dt>Current chapter</dt><dd>Restoration ashore</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+    <section id="restoration" aria-labelledby="restoration-title">
+      <p class="eyebrow">Work in progress</p><h2 id="restoration-title">More than a repaint</h2>
+      <p class="section-intro">The refit covers the structure, machinery and everyday systems. Hull preparation and engine work have already begun; the remaining systems form the next part of the project. This overview reflects our plans and progress in October 2026.</p>
+      <div class="cards">
+        <article class="card"><h3>Hull &amp; coatings</h3><span class="status">In progress</span><p>Removing the old antifouling and epoxy coatings exposed widespread small areas of osmosis damage, along with cracked gelcoat above the waterline. Preparation and fairing are underway before a new protective coating system is applied.</p><ul class="tags" aria-label="Hull work"><li>Laminate repair</li><li>Fairing</li><li>Epoxy barrier</li></ul></article>
+        <article class="card"><h3>Keel &amp; fittings</h3><span class="status">Inspection and repair planning</span><p>The keel attachment needs careful attention: inspection has revealed deterioration in some of the studs. The refit also includes reviewing the underwater fittings and replacing ageing through-hulls and seacocks.</p><ul class="tags" aria-label="Keel work"><li>Keel attachment</li><li>Through-hulls</li><li>Seacocks</li></ul></article>
+        <article class="card"><h3>Engine</h3><span class="status">Rebuild underway</span><p>We are rebuilding the Volvo Penta MD2B rather than replacing it. The work includes dismantling and inspecting the engine, with attention to the cylinder heads, injectors, cooling system and wet exhaust installation.</p><ul class="tags" aria-label="Engine work"><li>MD2B</li><li>Diesel</li><li>Cooling &amp; exhaust</li></ul></article>
+        <article class="card"><h3>Electrical system</h3><span class="status planned">Planned refit</span><p>A new 12 V installation is being planned around clear distribution, suitable circuit protection and battery monitoring. Charging arrangements will bring together the engine, shore power and solar generation.</p><ul class="tags" aria-label="Electrical work"><li>12 V DC</li><li>Battery monitoring</li><li>Solar charging</li></ul></article>
+        <article class="card"><h3>Plumbing &amp; interior</h3><span class="status planned">Planned refit</span><p>Freshwater, drainage and sanitation systems are part of the overhaul. Inside, the focus is on ventilation, insulation and practical storage, while keeping the atmosphere of a classic yacht.</p><ul class="tags" aria-label="Interior work"><li>Fresh water</li><li>Ventilation</li><li>Storage</li></ul></article>
+        <article class="card"><h3>Rig &amp; deck</h3><span class="status planned">Planned inspection</span><p>The deck hardware, standing and running rigging, bowsprit and mizzen installation will be inspected before the boat returns to sailing. The aim is to retain her distinctive appearance with reliable, practical equipment.</p><ul class="tags" aria-label="Rig work"><li>Yawl rig</li><li>Bowsprit</li><li>Deck hardware</li></ul></article>
+      </div>
+    </section>
+    <section id="journey" aria-labelledby="journey-title">
+      <h2 id="journey-title">The journey so far</h2>
+      <ol class="milestones">
+        <li><span class="phase">Spring 2026</span><h3>A new crew</h3><p>We bought Gracil and began finding out what it would take to return her to the water.</p></li>
+        <li><span class="phase">Summer &amp; autumn 2026</span><h3>Back to the structure</h3><p>Stripping coatings, sanding the hull and dismantling the engine turned an ambitious idea into a hands-on restoration.</p></li>
+        <li><span class="phase">Next chapter</span><h3>Build, test, sail</h3><p>Complete the repairs, rebuild the systems and test the boat before setting out on new voyages.</p></li>
+      </ol>
+    </section>
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Follow the next chapter</h2>
+      <div class="cta">
+        <div class="panel"><h3>Follow the work or get in touch</h3><p>Visit our updates for news from the project, or join us on Discord to talk about the boat. If you know the Schelin Cruiser design, have old photographs or recognise Gracil from her Swedish sailing years, we would love to hear from you.</p><div class="actions"><a class="button" href="Updates.html">Project updates</a><a class="button secondary" href="https://discord.gg/4YZHHEGe">Join the Discord</a></div></div>
+        <div class="panel"><h3>Help keep the project moving</h3><p>Support helps us with the materials, parts and practical work behind the restoration. Advice, knowledge of the design and useful contacts are welcome too.</p><div class="actions"><a class="button secondary" href="https://ko-fi.com/oversailed">Support on Ko-fi</a><a href="Crew.html">Meet the crew</a></div></div>
+      </div>
+    </section>
   </main>
+  <footer><p>Gracil &middot; An <a href="index.html">OverSailed</a> project</p></footer>
 </body>
 </html>
